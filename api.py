@@ -17,3 +17,6 @@ def create_employee():
     return jsonify({ 'error': 'Invalid employee properties.' }), 400
 
   return '', 201, { 'location': f'/employees/{employee["id"]}' }
+
+if __name__ == '__main__':
+   app.run(port=5000)
